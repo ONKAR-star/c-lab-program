@@ -1,0 +1,42 @@
+ #include <iostream>
+#include <string>
+using namespace std;
+
+class program {
+public:
+    // Properties (data members)
+    string name;
+    int winningseats;
+    int Groupenumber;
+
+    // Function to display program information
+    void displayInfo() {
+        cout << "Name: " << name << endl;
+        cout << "winning seats: " <<  winningseats << endl;
+        cout << "Groupenumber: " << Groupenumber << endl;
+    }
+};
+
+int main() {
+    // Create objects (instances) of the program class
+    program p1;
+    program p2;
+
+    // Set properties for program1
+    p1.name = "raghav";
+    p1. winningseats = 99;
+    p1.Groupenumber = 21;
+
+    // Set properties for  program2
+    p2.name = "punit";
+    p2. winningseats = 97;
+    p2. Groupenumber = 23;
+
+    // Display information for each student
+    cout << "p1 Information:" << endl;
+    p1.displayInfo();
+    cout << endl; // For better readability
+    cout<<"p2 information:"<<endl;
+    p2.displayInfo();
+    return 0;
+}
